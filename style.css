@@ -1,0 +1,55 @@
+#btn1{
+  background-color:#4E9CF3;
+  color: white;
+  width: 110px;
+  padding: 5px 5px;
+  margin-left: 41%;
+  display: inline-block;
+  font-size: 16px;
+  box-shadow: 7px;
+}
+#btn2{
+  background-color:#4E9CF3;
+  color: white;
+  width: 110px;
+  padding: 5px 5px;
+  margin-left: 1%;
+  display: inline-block;
+  font-size: 16px;
+  box-shadow: 7px;
+}
+#accept{
+  margin-left: 30%;
+}
+h2{
+  color:#4E9CF3;
+}
+  #tabletn,#keys, #values {
+    width: 50%;
+    margin-left: 36%;
+  }
+  
+  #editBtn{
+    background-color:#4E9CF3;
+    color: white;
+    width: 110px;
+    padding: 5px 5px;
+    margin-left: 41%;
+    display: inline-block;
+    font-size: 16px;
+    box-shadow: 7px;
+  }
+  #deleteBtn{
+    background-color:#4E9CF3;
+    color: white;
+    width: 110px;
+    padding: 5px 5px;
+    margin-left: 1%;
+    display: inline-block;
+    font-size: 16px;
+    box-shadow: 7px;
+  }
+  fieldset{
+    margin-left: 33%;
+    margin-right: 27%;
+  }
