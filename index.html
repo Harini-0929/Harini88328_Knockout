@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+    <script src = "https://ajax.aspnetcdn.com/ajax/knockout/knockout-3.1.0.js" 
+    type = "text/javascript"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+    <h2 align="center">STUDENT REGISTRATION FORM</h2>
+    <form id="save">
+        <table align="center" cellpadding = "10">
+            <tr>
+                <td>FIRST NAME</td>
+                <td><input type="text" id="fname" data-bind="value:fname"></td>
+            </tr>
+            <tr>
+                <td>LAST NAME</td>
+                <td><input type="text" id="lname" data-bind="value:lname"></td>
+            </tr>
+            <tr>
+                <td>DATE OF BIRTH</td>
+                <td><select  id="date" data-bind="options: availableDates, value: selectedDate"></select>
+                    <select id="month" data-bind="options: availableMonths,value: selectedMonth"></select>
+                    <select id="year" data-bind="options: availableYears,value: selectedYear"></select>
+                </td>
+            </tr>
+            <tr>
+                <td>EMAIL</td>
+                <td><input type="text" id="email" data-bind="value:email"></td>
+            </tr>
+            <tr>
+                <td>MOBILE NUMBER</td>
+                <td><input type="number" id="mobile" data-bind="value:mobile"></td>
+            </tr>
+            <tr>
+                <td>GENDER</td>
+                <td><input type="radio" id="gender" value="Male" data-bind = "checked: gender">MALE
+                    <input type="radio" id="gender" value="Female" data-bind = "checked: gender">FEMALE
+                </td>
+            </tr>
+            <tr>
+                <td>ADDRESS</td>
+                <td><textarea type="text" cols="50" rows="5" id="address" data-bind="value:address"></textarea></td>
+            </tr>
+            <tr>
+                <td>CITY</td>
+                    <td>
+                        <input type="text" id="city" data-bind="value:city">
+                    </td>
+            </tr>
+                  <tr>
+                    <td>ZIP CODE</td>
+                    <td><input type="number" id="zipCode" data-bind="value:zipCode"></td>
+                 </tr>
+                <tr>
+                    <td>STATE</td>
+                    <td><select type="text" id="state" data-bind="options: availableStates,value: selectedState"></select></td>
+                </tr>
+                <tr>
+                   <td>COUNTRY</td>
+                   <td><select type="text" id="country" data-bind=" options: availableCountries,value: selectedCountry"></select></td>
+                </tr>
+                
+                <tr>
+                    <td>COURSE APPLIED</td>
+                    <td><input type="radio" id="course" value="BCA" data-bind = "checked: course">BCA
+                        <input type="radio" id="course" value="BSC" data-bind = "checked: course">BSC
+                        <input type="radio" id="course" value="BCOM" data-bind = "checked: course">BCOM
+                        <input type="radio" id="course" value="BA" data-bind = "checked: course">BA
+                    </td>
+                </tr>
+        </table>
+        <p><input type="checkbox" id ="accept" data-bind="checked : accept"> I HERE BY AGREE ALL THE INFORMATION PUBLISHED IS CORRECT.</p>
+        <input type="button" id="btn1" value="SUBMIT" data-bind="enable: accept">  
+        <input id="btn2" type="reset" value="RESET">    
+    </form>
+    </div>
+    <div class="col-md-4"></div>
+    
+     <h2 align="center">LOCAL STORAGE DATA</h2>
+    <fieldset>
+        <table id="tabletn">     
+            <tr><td id ="keys"></td><td id = "values"></td>
+            </tr>
+        </table>
+    </fieldset>
+    <br>
+    <br>
+        <button id="editBtn">EDIT</button>
+        <button id="deleteBtn">DELETE</button>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout-validation/2.0.3/knockout.validation.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
